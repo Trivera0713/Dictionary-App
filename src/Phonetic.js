@@ -5,10 +5,14 @@ export default function Phonetic(props) {
   console.log(props.phonetic);
   return (
     <div className="Phonetic">
-      <audio controls src={props.phonetic.audio}>
-        <a href={props.phonetic.audio}>Listen</a>{" "}
-      </audio>
-      <span className="text">{props.phonetic.text}</span>
+      <div className="row">
+        <div className="col-md-6">
+          <audio controls src={props.phonetic.audio}>
+            <a href={props.phonetic.audio}>Listen</a>
+          </audio>
+        </div>
+        <div className="text col-md-6 ">{props.phonetic.text}</div>
+      </div>
     </div>
   );
 }

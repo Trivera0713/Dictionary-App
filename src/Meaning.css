@@ -1,0 +1,14 @@
+.Meaning h3 {
+  color: white;
+  font-size: 30px;
+}
+.Meaning p{
+  font-size: 20px;
+}
+.Meaning em{
+  color: white;
+}
+@media (max-width: 960px){
+  .Meaning h3{text-align: center;
+  text-decoration: underline;}
+}

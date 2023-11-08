@@ -1,7 +1,28 @@
+.App {
+  background: radial-gradient(
+    circle at 50.3% 44.5%,
+    rgb(116, 147, 179) 30%,
+    rgb(62, 83, 104) 100.2%
+  );
+}
 .App-header h1 {
+  color: #fff;
+  padding-top: 50px;
+  font-family: "DM Serif Display", serif;
   text-align: center;
-  font-size: 40px;
+  font-size: 75px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 footer {
+  padding-bottom: 30px;
   text-align: center;
+  color: rgb(255, 253, 255);
+  font-size: 20px;
+}
+@media (max-width: 960px) {
+  .App-header h1 {
+    font-size: 50px;
+    padding-top: 40px;
+  }
 }

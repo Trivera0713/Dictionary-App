@@ -3,7 +3,6 @@ import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
-import Synonyms from "./Synonyms";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -57,7 +56,7 @@ export default function Dictionary(props) {
           </div>
         </section>
         <Results result={result} />
-  
+
         <Photos photos={photo} />
       </div>
     );
